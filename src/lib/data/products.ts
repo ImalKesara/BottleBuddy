@@ -1,49 +1,59 @@
+import type { Product } from "#lib/types/product.ts";
 
 // Fictional sample products for development; prices are demo values, not live listings.
-export const products = [
-	{
-		id: 'amber-trail-lager',
-		name: 'Amber Trail Lager',
-		brand: 'North Pier',
-		category: 'Beer',
-		price: 1450,
-		abv: 4.2,
-		description: 'A crisp, easygoing lager with a gentle malt finish.'
-	},
-	{
-		id: 'cloudline-pale-ale',
-		name: 'Cloudline Pale Ale',
-		brand: 'Copper Finch',
-		category: 'Beer',
-		price: 1850,
-		abv: 4.8,
-		description: 'Bright citrus notes with balanced bitterness.'
-	},
-	{
-		id: 'orchard-apple-cider',
-		name: 'Orchard Apple Cider',
-		brand: 'Green Kite',
-		category: 'Cider',
-		price: 1750,
-		abv: 4.0,
-		description: 'Fresh apple character with a crisp finish.'
-	},
-	{
-		id: 'rose-garden-rose',
-		name: 'Rose Garden Rosé',
-		brand: 'Little Valley',
-		category: 'Wine',
-		price: 4200,
-		abv: 12,
-		description: 'A dry rosé with strawberry and wildflower notes.'
-	},
-	{
-		id: 'juniper-small-batch-gin',
-		name: 'Juniper Small Batch Gin',
-		brand: 'Quiet Harbour',
-		category: 'Spirits',
-		price: 6800,
-		abv: 40,
-		description: 'A botanical gin with bright citrus and juniper.'
-	}
+export const products : Product[] = [
+  {
+      id: "carlsberg-premium",
+      name: "Carlsberg Premium Beer",
+      brand: "Carlsberg",
+      category: "Beer",
+      price: 540,
+      abv: 4.8,
+      image: "/products/413.jpg"
+    },
+    {
+      id: "ryders-wild-apple",
+      name: "Ryder's Wild Apple",
+      brand: "Ryder's",
+      category: "Beer",
+      price: 730,
+      abv: 8.8,
+      image: "/products/336.jpg"
+    },
+    {
+      id: "lion-lager",
+      name: "Lion Lager",
+      brand: "Lion",
+      category: "Beer",
+      price: 320,
+      abv: 4.8,
+      image: "/products/475.jpg"
+    },
+    {
+      id: "lion-stout",
+      name: "Lion Stout",
+      brand: "Lion",
+      category: "Beer",
+      price: 730,
+      abv: 8.8,
+      image: "/products/476.jpg"
+    },
+    {
+      id: "somersby-apple",
+      name: "Somersby Apple Cider",
+      brand: "Somersby",
+      category: "Cider",
+      price: 600,
+      abv: 4.5,
+      image: "/products/BE113.webp"
+    },
+    {
+      id: "somersby-blackberry",
+      name: "Somersby Blackberry Cider",
+      brand: "Somersby",
+      category: "Cider",
+      price: 600,
+      abv: 4.5,
+      image: "/products/BE114.jpg"
+    }
 ];
